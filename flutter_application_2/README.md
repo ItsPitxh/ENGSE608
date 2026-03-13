@@ -1,16 +1,40 @@
-# flutter_application_2
+# Flutter Application 2 — Peach Counter App
 
-A new Flutter project.
+## ภาพรวม
 
-## Getting Started
+โปรเจกต์ Flutter ที่สาธิตการใช้ **StatefulWidget** และ **setState** โดยทำเป็นแอปนับจำนวน (Counter) ที่ผู้ใช้กดปุ่มแล้วตัวเลขเพิ่มขึ้นทีละ 1
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## โครงสร้างไฟล์
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter_application_2/
+└── lib/
+    └── main.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## การทำงาน
+
+แอปแสดงตัวนับจำนวนกลางหน้าจอ เมื่อกดปุ่ม `+` (FloatingActionButton) ตัวเลขจะเพิ่มขึ้น 1 ทุกครั้ง โดยใช้ `setState()` เพื่ออัปเดต UI
+
+---
+
+## แนวคิดที่ฝึก
+
+| แนวคิด | รายละเอียด |
+|---|---|
+| **StatefulWidget** | Widget ที่มี State เปลี่ยนแปลงได้ |
+| **setState()** | สั่งให้ Flutter วาด UI ใหม่เมื่อ State เปลี่ยน |
+| **FloatingActionButton** | ปุ่มลอยมุมล่างขวา |
+| **Scaffold / AppBar** | โครงสร้างหน้าพื้นฐานของ Material App |
+
+---
+
+## วิธีรัน
+
+```bash
+flutter run
+```

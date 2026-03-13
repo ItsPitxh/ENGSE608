@@ -1,16 +1,36 @@
-# flutter_application_1
+# Flutter Application 1 — Pich-app (Hello World)
 
-A new Flutter project.
+## ภาพรวม
 
-## Getting Started
+โปรเจกต์ Flutter เริ่มต้นที่แสดงข้อความ **"Pich-app"** บนหน้าจอ เป็นตัวอย่างการสร้าง Flutter App พื้นฐานที่สุด ไม่มี State หรือ Interaction ใดๆ
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## โครงสร้างไฟล์
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter_application_1/
+└── lib/
+    └── main.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## การทำงาน
+
+เมื่อรันแอปจะแสดงแค่ข้อความ `Pich-app` กลางหน้าจอ โดยใช้ `MaterialApp` และ `Text` Widget โดยตรง
+
+---
+
+## แนวคิดที่ฝึก
+
+- การสร้าง Flutter App ด้วย `runApp()`
+- การใช้ `MaterialApp` และ `Text` Widget เบื้องต้น
+
+---
+
+## วิธีรัน
+
+```bash
+flutter run
+```

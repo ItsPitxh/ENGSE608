@@ -1,16 +1,45 @@
-# flutter_application_3
+# Flutter Application 3 — Layout Demo
 
-A new Flutter project.
+## ภาพรวม
 
-## Getting Started
+โปรเจกต์ Flutter ที่สาธิตการจัด **Layout** โดยทำเป็นหน้าแนะนำสถานที่ท่องเที่ยว (ทะเลสาบ Oeschinen) ประกอบด้วยรูปภาพ, ชื่อสถานที่, ปุ่ม Action และข้อความอธิบาย
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## โครงสร้างไฟล์
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter_application_3/
+├── images/
+│   └── lake.jpg
+└── lib/
+    └── main.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Widget ที่ใช้
+
+| Widget | หน้าที่ |
+|---|---|
+| `ImageSection` | แสดงรูปภาพสถานที่ด้านบน |
+| `TitleSection` | แสดงชื่อและที่ตั้ง พร้อมไอคอน Star และจำนวน Rating |
+| `ButtonSection` | แถวปุ่ม 3 ปุ่ม (CALL, ROUTE, SHARE) |
+| `TextSection` | ย่อหน้าคำอธิบายรายละเอียดสถานที่ |
+
+---
+
+## แนวคิดที่ฝึก
+
+- การแบ่ง UI ออกเป็น Widget ย่อยๆ (Composition)
+- การใช้ `Row`, `Column`, `Expanded`, `Padding`
+- การใช้ `SingleChildScrollView` สำหรับเนื้อหายาว
+- การจัดการ Layout ด้วย `CrossAxisAlignment` และ `MainAxisAlignment`
+
+---
+
+## วิธีรัน
+
+```bash
+flutter run
+```
