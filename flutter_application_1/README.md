@@ -2,7 +2,7 @@
 
 ## ภาพรวม
 
-โปรเจกต์ Flutter เริ่มต้นที่แสดงข้อความ **"Pich-app"** บนหน้าจอ เป็นตัวอย่างการสร้าง Flutter App พื้นฐานที่สุด ไม่มี State หรือ Interaction ใดๆ
+โปรเจกต์ Flutter เริ่มต้นที่แสดงข้อความ "Pich-app" บนหน้าจอ เป็นตัวอย่างการสร้าง Flutter App พื้นฐานที่สุด
 
 ---
 
@@ -16,16 +16,26 @@ flutter_application_1/
 
 ---
 
-## การทำงาน
+## อธิบาย Code: `main.dart`
 
-เมื่อรันแอปจะแสดงแค่ข้อความ `Pich-app` กลางหน้าจอ โดยใช้ `MaterialApp` และ `Text` Widget โดยตรง
+### `void main()`
 
----
+```dart
+void main() {
+  const app = MaterialApp(
+    title: 'Pich-app',
+    home: Text('Pich-app'),
+  );
+  runApp(app);
+}
+```
 
-## แนวคิดที่ฝึก
+- **`main()`** — จุดเริ่มต้นของทุก Dart program Flutter จะเริ่มทำงานจากที่นี่
+- **`MaterialApp`** — Widget หลักที่ครอบทั้งแอป ทำให้ใช้ Material Design ได้ พารามิเตอร์ `title` คือชื่อแอปที่แสดงใน task switcher, `home` คือ Widget แรกที่แสดงผล
+- **`Text('Pich-app')`** — Widget แสดงข้อความ วางเป็น `home` ตรงๆ โดยไม่ผ่าน `Scaffold`
+- **`runApp(app)`** — ฟังก์ชัน Flutter ที่รับ Widget แล้วแสดงผลบนหน้าจอเต็มจอ
 
-- การสร้าง Flutter App ด้วย `runApp()`
-- การใช้ `MaterialApp` และ `Text` Widget เบื้องต้น
+> สังเกตว่าใช้ `const` ได้เพราะค่าทุกอย่างถูกกำหนดตายตัวตั้งแต่ compile time
 
 ---
 
